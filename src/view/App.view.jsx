@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Route } from "react-router-dom";
 import Home from "./pages/Home.page";
-import Joker from "./pages/Joker.page";
+import Game from "./pages/Game";
 import Footer from "./Footer.view";
 import TopBar from "./TopBar.view";
 
@@ -12,7 +12,8 @@ const App = () => {
       <TopBar />
 
       <Route path="/" exact component={Home} />
-      <Route path="/quotes" exact component={Joker} />
+      <Route path="/game" exact component={Game} />
+
 
       <Footer />
     </Box>

@@ -1,16 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+// import { logo } from '../../public/logo.svg'
+
 
 const TopBar = () => {
   return (
-    <Header>
-      <SLink to="/">
-        <Logo src="logo-t.png" alt="Tovana logo" />
-      </SLink>
-      <SLink to="/">Home</SLink>
-      <SLink to="/quotes">Ask chuck</SLink>
-    </Header>
+    < header className="App-header" >
+      {/* <img src={logo.png} className="App-logo" /> */}
+      < h2 > Tic Tac Toe</h2 >
+    </header >
   );
 };
 export default TopBar;
@@ -21,7 +20,7 @@ const Header = styled.header`
   position: fixed;
   left: 0;
   right: 0;
-  padding: 2rem;
+  /* padding: 2rem; */
   display: flex;
   align-items: center;
 `;
